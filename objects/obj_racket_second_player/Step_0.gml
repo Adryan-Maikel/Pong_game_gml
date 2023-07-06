@@ -1,8 +1,7 @@
 /// @description Movimento e colisão
 // 
-
 #region Movimentação se modo de jogo for dois jogadores
-if global.two_player {
+if global.two_players {
 	if keyboard_check(inputs.down) {
 		vspeed = speed_racket;
 	} else if keyboard_check(inputs.up) {
@@ -10,8 +9,7 @@ if global.two_player {
 	} else {
 		vspeed = 0;
 	}
-} else { if vspeed > 2 or vspeed > -2 vspeed = global.vspeed_boll; }
-
+} else { vspeed = obj_ball.vspeed; speed = clamp(speed, -2, 2); }
 #endregion
 #region Colisão
 if place_meeting(x, y + vspeed, obj_block) {

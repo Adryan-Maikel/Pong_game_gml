@@ -1,16 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_racket_second_player",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-  ],
+  "name": "obj_goal",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "rackets and ball",
-    "path": "folders/Objects/rackets and ball.yy",
+    "name": "blocks",
+    "path": "folders/Objects/blocks.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -29,9 +26,9 @@
   "properties": [],
   "solid": true,
   "spriteId": {
-    "name": "spr_racket_player",
-    "path": "sprites/spr_racket_player/spr_racket_player.yy",
+    "name": "spr_block",
+    "path": "sprites/spr_block/spr_block.yy",
   },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }

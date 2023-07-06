@@ -1,5 +1,7 @@
 /// @description 
 // 
 randomize();
-speed = 2;
-direction = choose(45, 135, 225, 315);
+
+speed = 0;
+start_game = false;
+alarm[0] = game_get_speed(gamespeed_fps) * 2;
